@@ -1,0 +1,38 @@
+<h1 class="main-title">
+    <br/>BÚSQUEDA DE <br/> PRODUCTOS
+</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col jumbo-placement" id="searcher">
+            <div class="jumbotron jumbo-bg">
+                <h2 class="search-title">Búsqueda de productos</h2>
+                <form id="search-form">
+                    <div>
+                        <input #searchInput id="search-field" type="text" class="form-control border border-dark bg-semi" placeholder="Ordenador portátil...">
+                    </div>
+                    <br/>
+                    <div class="text-right">
+                        <button type="submit" class="btn submit-btn" (click)="updateSearch(false)">BUSCAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col jumbo-placement-v2" id="results">
+            <div class="jumbotron jumbo-styling">
+                <h2 class="list-title">Se han encontrado <em>15</em> productos</h2>
+                <form id="search-again-form">
+                    <div>
+                        <input id="search-again-field" type="text" class="form-control border border-dark bg-semi" placeholder="Ordenador portátil...">
+                    </div>
+                    <p style="margin-top: 10px"><i class="fas fa-plus"></i> Añadir filtros de búsqueda</p>
+                    <div class="text-right">
+                        <button type="submit" class="btn filter-btn" (click)="updateSearch(true)">BUSCAR</button>
+                    </div>
+                </form>
+                <app-product-list></app-product-list>
+                <app-tyc></app-tyc>
+            </div>
+        </div>
+    </div>
+</div>

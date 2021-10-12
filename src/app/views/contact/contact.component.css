@@ -1,0 +1,41 @@
+.contact-info {
+    text-align: left;
+    font-size: 24px;
+    color: #707070;
+}
+
+.contact-margins {
+    margin-right: 10em;
+    margin-left: 10em;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #02577A;
+}
+
+.submit-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: #01303F;
+    border-width: 2px;
+    background-color: #F7F7F7;
+    color: #636363;
+    font-weight: bold;
+}
+
+.incorrect-form {
+    color: #e43b3b;
+    text-align: right;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 770px) {
+    .contact-info {
+        font-size: 17px;
+    }
+    .contact-margins {
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "products": [{
+            "id": 0,
+            "title": "Portátil MI Xiaomi 256 Gb SSD 16 RAM",
+            "description": "Etiam dignissim diam quis enim lobortis scelerisque fermentum. Molestie a iaculis...",
+            "img_url": "../../../../../assets/img/exampleProd1.jpg"
+        },
+        {
+            "id": 1,
+            "title": "Dell PC Gaming G5 16 Gb RAM",
+            "description": "Etiam dignissim diam quis enim lobortis scelerisque fermentum. Molestie a iaculis...",
+            "img_url": "../../../../../assets/img/exampleProd2.jpg"
+        }
+    ],
+    "workers": [{
+            "wid": 0,
+            "name": "Trabajador 1",
+            "job": "Puesto de trabajador 1",
+            "img_url": "../../../assets/img/worker1.jpg"
+        },
+        {
+            "wid": 1,
+            "name": "Trabajador 2",
+            "job": "Puesto de trabajador 2",
+            "img_url": "../../../assets/img/worker2.jpg"
+        },
+        {
+            "wid": 2,
+            "name": "Trabajador 3",
+            "job": "Puesto de trabajador 3",
+            "img_url": "../../../assets/img/worker3.jpg"
+        }
+    ]
+}

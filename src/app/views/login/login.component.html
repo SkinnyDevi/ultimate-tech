@@ -1,0 +1,60 @@
+<h1 class="main-title">
+    <br/>INICIAR <br/> SESIÓN
+</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col jumbo-placement">
+            <div class="jumbotron text-center jumbo-styling">
+                <div class="card login-margins">
+                    <article class="card-body">
+                        <h4 class="card-title mb-4 mt-1 login-title">Inicio de Sesión</h4>
+                        <form (ngSubmit)="submit()" #userForm="ngForm">
+                            <div class="form-group">
+                                <label class="float-left login-field-text" for="username">Nombre de Usuario</label>
+                                <input name="username" class="form-control login-field" #username="ngModel" required [(ngModel)]="user.username" placeholder="Nombre de usuario" type="text">
+                                <a href="/login" class="float-left link">No tienes una cuenta? Registrate aquí</a>
+                                <div *ngIf="username.invalid && username.dirty">
+                                    <div *ngIf="username .errors?.required">
+                                        <p class="incorrect-login"><br/>*Campo Requerido<br/></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label class="float-left login-field-text" for="password">Contraseña</label>
+                                <input class="form-control login-field" placeholder="******" type="password" name="password" #password="ngModel" required minlength="6" [(ngModel)]="user.password">
+                                <a href="/login" class="float-left link">Olvidaste tu contraseña?</a>
+                                <div *ngIf="password.invalid && password.dirty">
+                                    <div *ngIf="password .errors?.required">
+                                        <p class="incorrect-login"><br/>*Campo Requerido<br/></p>
+                                    </div>
+                                    <div *ngIf="password .errors?.minlength">
+                                        <p class="incorrect-login"><br/>*Mínimo 6 caracteres<br/></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <br/>
+                                <br/>
+                                <button [disabled]="!userForm .form.valid" class="btn btn-primary use-button-size" type="submit">INICIAR<br/>SESIÓN</button>
+                                <br/>
+                                <br/>
+                            </div>
+                            <hr class="my-4 separator-line">
+                            <p class="other-login-text">Inicia sesión de otra forma</p>
+                            <div>
+                                <button id="facebook" class="btn other-login facebook"><i class="fab fa-facebook-square"></i></button>
+                                <button id="google" class="btn other-login google"><i class="fab fa-google"></i></button>
+                                <button id="apple" class="btn other-login apple"><i class="fab fa-apple"></i></button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+                <br/>
+                <br/>
+                <app-tyc></app-tyc>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<h1 class="main-title">
+    <br/>CONTACTO
+</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col jumbo-placement">
+            <div class="jumbotron text-center jumbo-styling">
+                <div class="contact-info">
+                    <p>Se podrá poner en contacto con nosotros de las siguientes formas:</p>
+                    <p>Nº Telf. 928673783</p>
+                    <p>Horario de Atención al cliente: <br/>De 9:00 a 18:00</p>
+                    <p>¿Quieres escribirnos? <br/>¡Queremos escucharte!</p>
+                    <p>Rellena el formulario siguiente para ponerte en contacto con nosotros via email:</p>
+                    <p>ultimatech@tech.es</p>
+                </div>
+                <br />
+                <div class="card contact-margins">
+                    <article class="card-body">
+                        <form (ngSubmit)="submit()" #contactForm="ngForm">
+                            <div>
+                                <input type="email" style="background-color: #F7F7F7" class="form-control border border-dark rounded-0" placeholder="Email" name="email" #email="ngModel" required [(ngModel)]="emailForm.email" email="true">
+                            </div>
+                            <div *ngIf="email.invalid && email.dirty">
+                                <div *ngIf="email .errors?.required">
+                                    <p class="incorrect-form"><br/>*Campo Requerido<br/></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea style="background-color: #F7F7F7" size="4" class="form-control border border-dark rounded-0" rows="5" name="subjectText" placeholder="Habla con nosotros" #subject="ngModel" required minlength="6" [(ngModel)]="emailForm.subject"></textarea>
+                            </div>
+                            <div *ngIf="subject.invalid && subject.dirty">
+                                <div *ngIf="subject .errors?.required">
+                                    <p class="incorrect-form"><br/>*Campo Requerido<br/></p>
+                                </div>
+                                <div *ngIf="subject .errors?.minlength">
+                                    <p class="incorrect-form"><br/>*Mínimo 6 caracteres<br/></p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button [disabled]="!contactForm .form.valid" type="submit" class="btn btn-primary submit-btn">Enviar</button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+                <br />
+                <br />
+                <br />
+                <app-tyc></app-tyc>
+            </div>
+        </div>
+    </div>
+</div>

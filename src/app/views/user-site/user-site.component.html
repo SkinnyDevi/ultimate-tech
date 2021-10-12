@@ -1,0 +1,77 @@
+<h1 class="main-title">
+    <br/>ZONA <br/> USUARIO
+</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col jumbo-placement">
+            <div class="jumbotron text-center jumbo-styling">
+                <h2 class="welcome-text">Bienvenido, <strong><i> {{this.username}}</i></strong></h2>
+                <div class="card login-margins">
+                    <article class="card-body">
+                        <nav class="navbar navbar-light bg-light border border-dark option-styling">
+                            <a class="navbar-brand text-underline" href="#">Mis Pedidos</a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ordersNav">
+                            <span class="bg-transparent">+</span>
+                          </button>
+                            <div class="collapse navbar-collapse" id="ordersNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Pagados</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Cancelados</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                        <nav class="navbar navbar-light bg-light border border-dark option-styling">
+                            <a class="navbar-brand text-underline" href="#">Ajustes de la cuenta</a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#settingsNav">
+                          <span class="bg-transparent">+</span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="settingsNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Cambiar contraseña</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Ajustes de seguridad</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Borrar cuenta</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <nav class="navbar navbar-light bg-light border border-dark option-styling">
+                            <a class="navbar-brand text-underline" href="#">Servicio al cliente</a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#supportNav">
+                        <span class="bg-transparent">+</span>
+                      </button>
+                            <div class="collapse navbar-collapse" id="supportNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Reclamos abiertos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user-site">Servicio 24/7</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <p class="logout-link" (click)="logout()">Cerrar Sesión</p>
+                    </article>
+                </div>
+                <br />
+                <br />
+                <app-tyc></app-tyc>
+            </div>
+        </div>
+    </div>
+</div>

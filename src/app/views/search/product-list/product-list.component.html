@@ -1,0 +1,9 @@
+<div id="no-prods">
+    <br/>
+    <p>*Se han listado todos los productos dado que no se ha proporcionado una búsqueda.</p>
+</div>
+<div class="text-center" style="margin-top: 60px; margin-bottom: 40px;">
+    <div *ngFor="let p of products">
+        <app-product-field [product]="p"></app-product-field>
+    </div>
+</div>

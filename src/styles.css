@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+.gradient {
+    background: linear-gradient(110deg, rgba(216, 241, 255, 1) 0%, rgba(137, 214, 251, 1) 45%, rgba(2, 87, 122, 1) 100%);
+    background-repeat: no-repeat;
+    height: 1900px;
+}
+
+.main-title {
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+
+.jumbo-placement {
+    top: 20px;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.tyc {
+    color: #636363;
+    float: right;
+}
+
+.version {
+    color: #636363;
+    float: left;
+}
+
+.container h2 {
+    color: #636363;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.jumbo-styling {
+    background-color: white;
+    border-radius: 24px;
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        height: 1570px;
+    }
+    .main-title {
+        font-size: 50px;
+    }
+}

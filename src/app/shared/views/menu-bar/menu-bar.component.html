@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="logo" class="img-logo" /></a>
+    <div class="spacer"></div>
+    <button class="btn btn-transparent outline-gone mr-auto" type="button" onclick="openNav()">
+    <i class="fas fa-bars" style="font-size:30px; color: #707070"></i>
+  </button>
+</nav>
+
+<div id="myNav" class="overlay">
+    <nav class="navbar navbar-expand-xs navbar-light bg-transparent">
+        <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="logo" class="menu-img-logo" /></a>
+        <button class="btn btn-transparent outline-gone" type="button" href="javascript:void(0)" onclick="closeNav()">
+        <i class="fas fa-times closebtn"></i>
+  </button>
+    </nav>
+    <div class="overlay-content">
+        <a class="overlay-cancel">MENÚ</a>
+        <br /><br /><br />
+        <a class="menu-option" (click)="goToInit()">PÁGINA INICIAL</a>
+        <br />
+        <a class="menu-option" (click)="loginOptionCheck()">{{this.loginOption}}</a>
+        <br />
+        <a class="menu-option" (click)="goToSearch()">BUSCADOR DE PRODUCTOS</a>
+        <br />
+        <a class="menu-option" (click)="userCheck()">{{this.username?.toUpperCase()}}</a>
+        <br />
+        <a class="menu-option" (click)="goToContact()">CONTACTO</a>
+        <br />
+    </div>
+</div>

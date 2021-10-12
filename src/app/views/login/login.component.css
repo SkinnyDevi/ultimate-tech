@@ -1,0 +1,90 @@
+.login-margins {
+    margin-right: 10em;
+    margin-left: 10em;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #02577A;
+}
+
+.login-title {
+    color: #707070;
+    text-align: left;
+}
+
+.login-field-text {
+    color: #707070;
+    font-size: 15px;
+}
+
+.login-field {
+    border-color: #02577A;
+}
+
+.separator-line {
+    border-color: #02577A;
+    border-width: 1px;
+}
+
+.use-button-size {
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 15px;
+    border-color: #01303F;
+    border-width: 3px;
+    background-color: #F7F7F7 !important;
+    color: #707070;
+}
+
+.link {
+    color: #007FB2;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #005f85;
+}
+
+.other-login {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.other-login-text {
+    font-size: 20px;
+    color: #707070;
+}
+
+.facebook {
+    color: #3C5A99;
+}
+
+.google {
+    color: #d02727;
+    font-size: 35px !important;
+}
+
+.apple {
+    font-size: 43px !important;
+}
+
+.incorrect-login {
+    color: #e43b3b;
+    text-align: right;
+    font-weight: bold;
+}
+
+#facebook,
+#google,
+.btn {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 770px) {
+    .login-margins {
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+}

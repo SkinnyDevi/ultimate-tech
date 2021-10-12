@@ -1,0 +1,17 @@
+.requirements {
+    font-size: 19px;
+    text-align: left;
+    color: #636363;
+}
+
+.use-button-size {
+    width: 305px;
+    height: 98px;
+    font-size: 35px;
+    border-radius: 15px;
+    border-color: #01303F;
+    border-width: 5px;
+    background-color: #F7F7F7;
+    color: #636363;
+    font-weight: bold;
+}
